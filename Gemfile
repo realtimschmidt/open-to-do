@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'figaro'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
