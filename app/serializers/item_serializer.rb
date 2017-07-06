@@ -1,5 +1,5 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :created_at, :item_title, :description, :status
+  attributes :id, :created_at, :item_title, :description, :completed
 
   def item_title
     object.item_title
@@ -9,8 +9,8 @@ class ItemSerializer < ActiveModel::Serializer
     object.description
   end
 
-  def status
-    object.status
+  def complete
+    object.completed
   end
 
   def created_at

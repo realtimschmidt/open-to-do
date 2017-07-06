@@ -2,7 +2,8 @@ require "random_data"
 
 50.times do
   List.create!(
-    list_title:  Faker::Name.title
+    list_title:  Faker::Name.title,
+    private: false
   )
 end
 lists = List.all
@@ -12,7 +13,7 @@ lists = List.all
     list:         lists.sample,
     item_title:   Faker::Name.title,
     description:  Faker::Lorem.paragraph,
-    status:       false
+    completed:    false
   )
 end
 
